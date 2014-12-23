@@ -25,22 +25,22 @@ var extractKey = require('./libs/extractKey.js');
 module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
-    firebase: 'myfirebase',                                             // The name of your firebase
-    firebaseSecret: 'yoursecretkey',                                    // Your firebase's API key
-    mailgunKey: 'mailgunkey',                                           // The API key from mailgun
-    fromEmail: 'no-reply@customsite.com',                               // Mailgun will send ALL emails for ALL sites from this email address.
-    elasticServer: 'myelasticserver.com',                               // The address of your elastic server
-    elasticUser: 'myelasticuser',                                       // The read/write user on your elastic server
-    elasticPassword: 'myelasticuserpassword',                           // The password for your elastic user
+    firebase: 'maxgoldhouse',                                             // The name of your firebase
+    firebaseSecret: 'xsYQcEiM0qlvdTf8e3Fyq8WirUFX818EazKgmJaP',                                    // Your firebase's API key
+    mailgunKey: 'key-3c335ab848fbd6064d29610d7fcb967a',                                           // The API key from mailgun
+    fromEmail: 'no-reply@mg.dindi.net',                               // Mailgun will send ALL emails for ALL sites from this email address.
+    elasticServer: 'http://elastic-goldhouse.rhcloud.com',                               // The address of your elastic server
+    //elasticUser: 'myelasticuser',                                       // The read/write user on your elastic server
+    //elasticPassword: 'myelasticuserpassword',                           // The password for your elastic user
     //elasticOptions: {                                                 // This block is completely optional but useful if you need to specify
     //  port: 9200,                                                     // more elasticsearch options. Possible keys are :
     //  secure: false,                                                  // port, secure, defaultMethod, params, path, timeout, keepAlive and agent
     //  defaultMethod: 'GET'                                            // Uncomment this block and fill in your required values if needed
     //},
-    googleProjectId: 'mygoogleproject',                                 // Your google project ID. Usually something like whatever-123
-    sitesBucket: 'your-company-name-sites',                             // The name of the build bucket on Google Cloud Storage
-    backupBucket: 'your-company-name-backups',                          // The name of the backup bucket on Google Cloud Storage
-    googleServiceAccount: 'long_string@developer.gserviceaccount.com',  // The email of your projects Service Acccount
+    googleProjectId: 'wh-dindinet-3',                                 // Your google project ID. Usually something like whatever-123
+    sitesBucket: 'dindinet-sites',                             // The name of the build bucket on Google Cloud Storage
+    backupBucket: 'dindinet-backups',                          // The name of the backup bucket on Google Cloud Storage
+    googleServiceAccount: '178626210628-0e71padvjklab0qmvp9l3sdqdk7s83ja@developer.gserviceaccount.com',  // The email of your projects Service Acccount
     newrelicEnabled: false,                                             // Set to true to enable NewRelic monitoring (also make sure that a newrelic.js file exists)
     memcachedServers: [
       'localhost:11211'
